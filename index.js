@@ -11,6 +11,12 @@ const mongoURL = `mongodb://${process.env.MONGO_USER}:${process.env.MONGO_PASSWO
 
 // const mongoURL = `mongodb://localhost:27017/?authSource=admin`;
 
+app.get("/hey", async (req, res) => {
+  return res.status(200).json({
+    "message": "Heeyyyyyyyyyy!!!!!!",
+  });
+});
+
 app.get("/notes", async (req, res) => {
   try {
     const notes = await Note.find();
