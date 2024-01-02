@@ -17,7 +17,7 @@ console.log('mongoURL', mongoURL);
 
 app.get("/hey", async (req, res) => {
   return res.status(200).json({
-    "tite": "Hi, THIS IS THE NEW MESSAGE?.??.OK;:,,??",
+    "tite": "Hi, 15:55 ",
   });
 });
 
