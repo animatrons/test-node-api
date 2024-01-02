@@ -9,6 +9,10 @@ app.use(express.json());
 
 const mongoURL = `mongodb://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_IP}:${process.env.MONGO_PORT}/?authSource=admin`;
 
+console.log('MONGO_USER', process.env.MONGO_USER);
+console.log('MONGO_PASSWORD', process.env.MONGO_PASSWORD);
+console.log('mongoURL', mongoURL);
+
 // const mongoURL = `mongodb://localhost:27017/?authSource=admin`;
 
 app.get("/hey", async (req, res) => {
